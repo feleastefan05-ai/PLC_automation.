@@ -1,0 +1,735 @@
+{
+  "version": 4,
+  "parts": [
+    {
+      "id": "bld_1",
+      "name": "Building",
+      "locked": true,
+      "type": "building",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotationY": 0,
+      "params": {
+        "lengthSections": 5,
+        "widthSections": 4,
+        "heightSections": 1,
+        "columnSpacing": 0,
+        "rules": [
+          {
+            "wall": "B",
+            "run": 1,
+            "gap": 1,
+            "count": 2,
+            "start": 1,
+            "doorCount": 1,
+            "trailer": true
+          },
+          {
+            "wall": "B",
+            "run": 1,
+            "gap": 1,
+            "count": 2,
+            "start": 24,
+            "doorCount": 1,
+            "trailer": true
+          },
+          {
+            "wall": "A",
+            "run": 1,
+            "gap": 2,
+            "count": 2,
+            "start": 32,
+            "doorCount": 1,
+            "trailer": true
+          },
+          {
+            "wall": "A",
+            "run": 1,
+            "gap": 2,
+            "count": 2,
+            "start": 28,
+            "doorCount": 1,
+            "trailer": true
+          },
+          {
+            "wall": "dock_door",
+            "run": 1,
+            "gap": 1,
+            "count": 1,
+            "start": 2,
+            "doorCount": 2,
+            "trailer": true
+          }
+        ],
+        "floorVisible": true,
+        "wallsVisible": true,
+        "roofVisible": true,
+        "brightness": 1,
+        "backgroundColor": "#9fb1c4"
+      }
+    },
+    {
+      "id": "pt_1",
+      "type": "part",
+      "packageId": "oip.belt-conveyor",
+      "position": [
+        5.094404593292827,
+        2,
+        1.6795768670456077
+      ],
+      "rotationY": 0,
+      "params": {
+        "shapePreset": "straight",
+        "segments": [
+          [
+            4,
+            0
+          ]
+        ],
+        "width": 1.524,
+        "height": 0.17,
+        "standHeight": 2,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 2,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "frameRails": true,
+        "leftGuard": true,
+        "rightGuard": true,
+        "guardOpenings": [],
+        "guardHoles": [],
+        "guardMitres": [],
+        "railCuts": [],
+        "guardExtents": [],
+        "legs": true,
+        "legRests": [],
+        "tailLeg": true,
+        "tailLegOffset": 0.15,
+        "tailLegClearance": 1,
+        "headLeg": true,
+        "headLegOffset": 0.15,
+        "headLegClearance": 1,
+        "middleLegs": true,
+        "legSpacing": 3.05,
+        "exclusionStart": 0,
+        "exclusionEnd": 0,
+        "speedTag": "speed_tag_2",
+        "speedFpmTag": "",
+        "runTag": "conveyor_2",
+        "runningTag": "run_conveyor_2",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_3",
+      "type": "part",
+      "packageId": "oip.laser-sensor",
+      "position": [
+        5.094404593292827,
+        1.98,
+        2.5355768670456076
+      ],
+      "rotationY": 3.141592653589793,
+      "params": {
+        "maxRange": 1.564,
+        "showBeam": true,
+        "distanceTag": "distance_tag"
+      }
+    },
+    {
+      "id": "pt_4",
+      "type": "part",
+      "packageId": "oip.belt-conveyor",
+      "position": [
+        0.9244045932928273,
+        2,
+        1.6795768670456077
+      ],
+      "rotationY": 0,
+      "params": {
+        "shapePreset": "straight",
+        "segments": [
+          [
+            4,
+            0
+          ]
+        ],
+        "width": 1.524,
+        "height": 0.17,
+        "standHeight": 2,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 2,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "frameRails": true,
+        "leftGuard": true,
+        "rightGuard": true,
+        "guardOpenings": [],
+        "guardHoles": [],
+        "guardMitres": [],
+        "railCuts": [],
+        "guardExtents": [],
+        "legs": true,
+        "legRests": [],
+        "tailLeg": true,
+        "tailLegOffset": 0.15,
+        "tailLegClearance": 1,
+        "headLeg": true,
+        "headLegOffset": 0.15,
+        "headLegClearance": 1,
+        "middleLegs": true,
+        "legSpacing": 3.05,
+        "exclusionStart": 0,
+        "exclusionEnd": 0,
+        "speedTag": "speed_tag_1",
+        "speedFpmTag": "",
+        "runTag": "conveyor_1",
+        "runningTag": "conveyor_run_1",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_5",
+      "parent": "pt_4",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.7080374120642556,
+        2,
+        2.4715768670456075
+      ],
+      "rotationY": 0,
+      "params": {
+        "emergencyStop": false,
+        "text": "STOP",
+        "buttonColor": "#b3140f",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "press",
+        "tag": "out_button",
+        "lampTag": "lamp_tag"
+      }
+    },
+    {
+      "id": "pt_7",
+      "type": "part",
+      "packageId": "oip.diffuse-sensor",
+      "position": [
+        9.094404593292827,
+        1.98,
+        2.4985768670456077
+      ],
+      "rotationY": 3.141592653589793,
+      "params": {
+        "maxRange": 1.564,
+        "mode": "diffuse",
+        "showBeam": true,
+        "normallyClosed": false,
+        "mark": "",
+        "tag": "presence_tag_photo_eye"
+      }
+    },
+    {
+      "id": "pt_8",
+      "type": "part",
+      "packageId": "oip.curved-conveyor",
+      "position": [
+        9.264404593292825,
+        2,
+        3.2665768670456075
+      ],
+      "rotationY": 0,
+      "params": {
+        "innerRadius": 0.825,
+        "width": 1.524,
+        "height": 0.17,
+        "sweepDeg": 90,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 2,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "reverse": true,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "innerGuard": true,
+        "outerGuard": true,
+        "guardHoles": [],
+        "standHeight": 2,
+        "speedTag": "speed_tag_curved",
+        "speedFpmTag": "",
+        "runTag": "run_tag_curved",
+        "runningTag": "running_tag_curved",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_9",
+      "type": "part",
+      "packageId": "oip.flex-conveyor",
+      "position": [
+        10.04908234116813,
+        1.8555238776896146,
+        3.8181042836705954
+      ],
+      "rotationY": 0,
+      "params": {
+        "points": [
+          [
+            3,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "length": 8,
+        "infeedBrakes": false,
+        "dischargeBrakes": false,
+        "width": 0.6,
+        "sideGuides": false,
+        "standHeight": 0.8,
+        "fpmUnits": false,
+        "speedFpm": 197,
+        "speed": 1,
+        "speedTag": "speed_tag_flex",
+        "speedFpmTag": "",
+        "runTag": "run_tag_flex",
+        "accumulate": false,
+        "releaseTag": "release_tag_flex",
+        "meterGap": 0,
+        "fullTag": "full_tag_flex",
+        "showBeam": false
+      }
+    },
+    {
+      "id": "pt_10",
+      "type": "part",
+      "packageId": "oip.stack-light",
+      "position": [
+        10.152334658602975,
+        2.373417197058396,
+        3.2251742954300733
+      ],
+      "rotationY": 0,
+      "params": {
+        "segments": 3,
+        "value": 1,
+        "tag": "lamp_biskit_tag_1"
+      }
+    },
+    {
+      "id": "pt_11",
+      "type": "part",
+      "packageId": "oip.stack-light",
+      "position": [
+        11.55660120616275,
+        2.050000000745057,
+        2.658714356132399
+      ],
+      "rotationY": 0,
+      "params": {
+        "segments": 3,
+        "value": 1,
+        "tag": "lamp_biskit_tag_2"
+      }
+    },
+    {
+      "id": "pt_13",
+      "type": "part",
+      "packageId": "oip.box",
+      "position": [
+        2.9785124644053393,
+        2.2,
+        1.5670763668860275
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 0.6,
+        "width": 0.4,
+        "height": 0.4,
+        "mass": 10,
+        "color": "#ffffff"
+      }
+    },
+    {
+      "id": "pt_15",
+      "type": "part",
+      "packageId": "oip.turntable-conveyor",
+      "position": [
+        19.30764409615656,
+        0.95,
+        2.998725077089741
+      ],
+      "rotationY": -1.5707963267948961,
+      "params": {
+        "width": 1.524,
+        "standHeight": 0.95,
+        "fpmUnits": false,
+        "speedFpm": 197,
+        "speed": 1,
+        "deckAngleDeg": 0,
+        "rotationSpeedDeg": 20,
+        "angleTag": "target_angle_turn",
+        "speedTag": "speed_tag_turn",
+        "speedFpmTag": "",
+        "doneTag": "done_tag_turn",
+        "enableTag": "enable_tag_turn"
+      }
+    },
+    {
+      "id": "pt_16",
+      "type": "part",
+      "packageId": "oip.pallet",
+      "position": [
+        19.71030880200995,
+        0.0675,
+        4.508260895297832
+      ],
+      "rotationY": 0,
+      "params": {
+        "size": "1219x1016",
+        "mass": 20,
+        "color": "#ffffff"
+      }
+    },
+    {
+      "id": "pt_17",
+      "type": "part",
+      "packageId": "oip.pallet",
+      "position": [
+        19.69363786521548,
+        0.0675,
+        5.503256520048437
+      ],
+      "rotationY": 0,
+      "params": {
+        "size": "1219x1016",
+        "mass": 20,
+        "color": "#ffffff"
+      }
+    },
+    {
+      "id": "pt_18",
+      "type": "part",
+      "packageId": "oip.pallet",
+      "position": [
+        20.84293165994813,
+        0.0675,
+        4.471798909921092
+      ],
+      "rotationY": 0,
+      "params": {
+        "size": "1219x1016",
+        "mass": 20,
+        "color": "#ffffff"
+      }
+    },
+    {
+      "id": "pt_19",
+      "type": "part",
+      "packageId": "oip.pallet",
+      "position": [
+        18.534562497970825,
+        0.0675,
+        4.216044452845388
+      ],
+      "rotationY": 0,
+      "params": {
+        "size": "1219x1016",
+        "mass": 20,
+        "color": "#ffffff"
+      }
+    },
+    {
+      "id": "pt_20",
+      "type": "part",
+      "packageId": "oip.pallet",
+      "position": [
+        18.525131197180592,
+        0.0675,
+        5.459083206162232
+      ],
+      "rotationY": 0,
+      "params": {
+        "size": "1219x1016",
+        "mass": 20,
+        "color": "#ffffff"
+      }
+    },
+    {
+      "id": "pt_21",
+      "type": "part",
+      "packageId": "oip.pallet",
+      "position": [
+        21.050096194235056,
+        0.0675,
+        5.329449119632793
+      ],
+      "rotationY": 0,
+      "params": {
+        "size": "1219x1016",
+        "mass": 20,
+        "color": "#ffffff"
+      }
+    },
+    {
+      "id": "pt_24",
+      "type": "part",
+      "packageId": "oip.guard-rail",
+      "position": [
+        3.198972365567913,
+        0,
+        4.053021599560957
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 4,
+        "color": "#f2bd0f",
+        "omitPostStart": false,
+        "omitPostEnd": false
+      }
+    },
+    {
+      "id": "pt_25",
+      "type": "part",
+      "packageId": "oip.guard-rail",
+      "position": [
+        7.198972365567913,
+        0,
+        4.053021599560957
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 4,
+        "color": "#f2bd0f",
+        "omitPostStart": false,
+        "omitPostEnd": false
+      }
+    },
+    {
+      "id": "pt_26",
+      "type": "part",
+      "packageId": "oip.guard-rail",
+      "position": [
+        11.198972365567913,
+        0,
+        4.053021599560957
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 4,
+        "color": "#f2bd0f",
+        "omitPostStart": false,
+        "omitPostEnd": false
+      }
+    },
+    {
+      "id": "pt_27",
+      "type": "part",
+      "packageId": "oip.guard-rail",
+      "position": [
+        15.198972365567913,
+        0,
+        4.053021599560957
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 4,
+        "color": "#f2bd0f",
+        "omitPostStart": false,
+        "omitPostEnd": false
+      }
+    },
+    {
+      "id": "pt_28",
+      "type": "part",
+      "packageId": "oip.guard-rail",
+      "position": [
+        17.19897236556791,
+        0,
+        6.053021599560957
+      ],
+      "rotationY": -1.5707963267948966,
+      "params": {
+        "length": 4,
+        "color": "#f2bd0f",
+        "omitPostStart": true,
+        "omitPostEnd": false
+      }
+    },
+    {
+      "id": "pt_29",
+      "type": "part",
+      "packageId": "oip.safety-gate",
+      "position": [
+        17.93025768620935,
+        0,
+        7.925368899027571
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 1,
+        "open": false,
+        "openAngle": 110,
+        "openSpeed": 180,
+        "normallyClosed": false,
+        "postColor": "#f2bd0f",
+        "meshColor": "#0d0d0d",
+        "handleColor": "#c91717",
+        "omitPostStart": false,
+        "omitPostEnd": false,
+        "tag": ""
+      }
+    },
+    {
+      "id": "pt_30",
+      "type": "part",
+      "packageId": "oip.safety-gate",
+      "position": [
+        18.93025768620935,
+        0,
+        7.925368899027571
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 1,
+        "open": false,
+        "openAngle": 110,
+        "openSpeed": 180,
+        "normallyClosed": false,
+        "postColor": "#f2bd0f",
+        "meshColor": "#0d0d0d",
+        "handleColor": "#c91717",
+        "omitPostStart": false,
+        "omitPostEnd": false,
+        "tag": ""
+      }
+    },
+    {
+      "id": "pt_31",
+      "type": "part",
+      "packageId": "oip.safety-gate",
+      "position": [
+        19.93025768620935,
+        0,
+        7.925368899027571
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 1,
+        "open": false,
+        "openAngle": 110,
+        "openSpeed": 180,
+        "normallyClosed": false,
+        "postColor": "#f2bd0f",
+        "meshColor": "#0d0d0d",
+        "handleColor": "#c91717",
+        "omitPostStart": false,
+        "omitPostEnd": false,
+        "tag": ""
+      }
+    },
+    {
+      "id": "pt_32",
+      "type": "part",
+      "packageId": "oip.safety-gate",
+      "position": [
+        20.93025768620935,
+        0,
+        7.925368899027571
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 1,
+        "open": false,
+        "openAngle": 110,
+        "openSpeed": 180,
+        "normallyClosed": false,
+        "postColor": "#f2bd0f",
+        "meshColor": "#0d0d0d",
+        "handleColor": "#c91717",
+        "omitPostStart": false,
+        "omitPostEnd": false,
+        "tag": ""
+      }
+    },
+    {
+      "id": "pt_33",
+      "type": "part",
+      "packageId": "oip.safety-gate",
+      "position": [
+        21.93025768620935,
+        0,
+        7.925368899027571
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 1,
+        "open": false,
+        "openAngle": 110,
+        "openSpeed": 180,
+        "normallyClosed": false,
+        "postColor": "#f2bd0f",
+        "meshColor": "#0d0d0d",
+        "handleColor": "#c91717",
+        "omitPostStart": false,
+        "omitPostEnd": false,
+        "tag": ""
+      }
+    },
+    {
+      "id": "pt_34",
+      "type": "part",
+      "packageId": "oip.fence",
+      "position": [
+        -0.9806280577319484,
+        0,
+        4.091823087893433
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 4,
+        "height": 2,
+        "postColor": "#f2bd0f",
+        "meshColor": "#0d0d0d",
+        "omitPostStart": false,
+        "omitPostEnd": false
+      }
+    }
+  ]
+}

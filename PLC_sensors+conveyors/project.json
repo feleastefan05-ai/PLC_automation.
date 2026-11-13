@@ -1,0 +1,27 @@
+{
+  "version": 7,
+  "name": "sensors_conveyors",
+  "packages": [
+    "parts/oip.belt-conveyor",
+    "parts/oip.box",
+    "parts/oip.pallet",
+    "parts/oip.six-axis-robot",
+    "parts/oip.barcode-scanner",
+    "parts/oip.laser-sensor",
+    "parts/oip.push-button",
+    "parts/oip.diffuse-sensor",
+    "parts/oip.curved-conveyor",
+    "parts/oip.flex-conveyor",
+    "parts/oip.stack-light",
+    "parts/oip.turntable-conveyor",
+    "parts/oip.light-curtain",
+    "parts/oip.guard-rail",
+    "parts/oip.safety-gate",
+    "parts/oip.fence"
+  ],
+  "scene": "scene.json",
+  "program": [
+    "plc/program.st"
+  ],
+  "stScanMs": 10
+}

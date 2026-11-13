@@ -1,0 +1,29 @@
+{
+  "id": "oip.curved-conveyor",
+  "name": "Curved Belt Conveyor",
+  "category": "Equipment",
+  "geometry": {
+    "kind": "drawn",
+    "bounds": {
+      "length": 2.434,
+      "width": 2.434,
+      "top": 0.17
+    },
+    "conveys": true
+  },
+  "materials": [],
+  "conveyor": {
+    "bed": "arc",
+    "surface": "belt",
+    "speedParam": "speed",
+    "frictionParam": "friction",
+    "reverseParam": "reverse"
+  },
+  "origin": {
+    "app": "v2:38503:2e9be0zbmv3"
+  },
+  "sdk": {
+    "level": 15,
+    "of": "v2:38503:2e9be0zbmv3"
+  }
+}
